@@ -13,6 +13,8 @@ body:
         Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
   - type: textarea
     id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce the issue:
     validations:
       required: true
   - type: textarea

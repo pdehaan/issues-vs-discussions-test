@@ -1,0 +1,44 @@
+name: Foxfooding: Feedback
+labels:
+  - foxfooding
+description: File a bug report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening a bug report, please search for the behaviour in the existing issues. 
+        
+        ---
+        
+        Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
+  - type: input
+    id: area-feature
+    attributes:
+      label: Area/Feature
+      description: "Which area or feature is this related to."
+    validations:
+      required: true
+  - type: textarea
+    id: what-do-you-like
+    attributes:
+      label: What do you like?
+    validations:
+      required: false
+  - type: textarea
+    id: what-do-you-dislike
+    attributes:
+      label: What do you dislike?
+  - type: input
+    id: device
+    attributes:
+      label: Device?
+      description: "Which device are you using."
+    validations:
+      required: true
+  - type: input
+    id: build-version
+    attributes:
+      label: Build version?
+      description: "Which build version are you using."
+    validations:
+      required: true

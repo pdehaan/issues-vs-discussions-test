@@ -1,0 +1,47 @@
+name: "Foxfooding: Bug"
+labels:
+  - foxfooding
+description: File a bug report
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening a bug report, please search for the behaviour in the existing issues. 
+        
+        ---
+        
+        Thank you for taking the time to file a bug report. To address this bug as fast as possible, we need some information.
+  - type: textarea
+    id: steps-to-reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What did you expect to happen?
+    validations:
+       required: true
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: What actually happened?
+    validations:
+       required: true
+  - type: markdown
+    attributes:
+      value: |
+        ### Device &amp; build information
+  - type: input
+    id: device
+    attributes:
+      label: Device?
+      description: "Which device are you using."
+    validations:
+      required: true
+  - type: input
+    id: build-version
+    attributes:
+      label: Build version?
+      description: "Which build version are you using."
+    validations:
+      required: true
